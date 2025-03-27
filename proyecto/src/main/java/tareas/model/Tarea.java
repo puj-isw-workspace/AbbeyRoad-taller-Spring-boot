@@ -14,14 +14,14 @@ import lombok.experimental.FieldDefaults;
 
 @Entity
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@ToString
 public class Tarea {
+    
     @Id
     @GeneratedValue
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Getter
-    @ToString
-    
     Long id;
 
     String descripcion;
